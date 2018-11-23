@@ -12,5 +12,10 @@ public class JenkinsTestApplicationTests {
 	@Test
 	public void contextLoads() {
 	}
+	
+	@Test
+	public void test() {
+		
+	}
 
 }
