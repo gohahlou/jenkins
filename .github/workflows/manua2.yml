@@ -1,0 +1,16 @@
+name: Dispatch test workflow
+
+on:
+  workflow_dispatch:
+    inputs:
+      log-level:
+        description: 'Log level'
+        default: 'warning'
+        required: true
+
+jobs:
+  print-log-level:
+    runs-on: ubuntu-latest
+    steps:
+    - name: print log level
+      run: echo "log level ${{ github.event.inputs.log-level }}"
